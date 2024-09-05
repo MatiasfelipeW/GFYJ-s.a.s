@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #f4f4f4;
+  background-color: #b8b7b76b;
 }
 
 header {
@@ -79,21 +79,7 @@ main {
   margin: 0 auto;
 }
 
-section {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-}
 
-h2 {
-  border-bottom: 2px solid #f4a261;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  color: #333;
-}
 
 h3 {
   font-size: 1.25rem;
@@ -107,8 +93,7 @@ p {
 
 /* Estilo del footer */
 footer {
-  background: #7977676b;
-  color: #fff;
+  background: #b8b7b76b;
   padding: 20px;
   text-align: center;
 }
@@ -145,4 +130,51 @@ footer a:hover {
   header nav ul li {
       margin: 10px 0;
   }
+}
+
+/
+
+/* Estilo general del footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+/* Ajustes para el contenedor de contacto */
+#contacto img {
+  max-width: 100px; /* Tamaño ajustable de la imagen */
+  display: block;
+  margin: 0 auto 10px auto; /* Centrar imagen y agregar margen inferior */
+}
+
+#contacto p {
+  margin: 5px 0;
+}
+
+/* Contenedor del botón separado del footer */
+.button-container {
+  margin-top: 20px; /* Espacio entre el footer y el botón */
+  text-align: center;
+}
+
+/* Estilos para el botón personalizado */
+.custom-button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  animation: colorChange 6.9s infinite; /* Animación de cambio de color */
+}
+
+/* Animación de cambio de color */
+@keyframes colorChange {
+  0% { background-color: red; }
+  33% { background-color: green; }
+  66% { background-color: rgb(11, 93, 121); }
+  100% { background-color: red; }
 }
